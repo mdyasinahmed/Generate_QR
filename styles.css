@@ -9,17 +9,17 @@
 
 body{
     height: 100vh;
-    background-color: rgb(219, 216, 225);
+    background-color: rgb(23, 24, 52) !important;
 }
-
+header h3{
+    color: #fff;
+    padding: 50px 0;
+}
 .wrapper{
+    margin: 150px auto;
     background-color: #FFFFFF;
     padding: 2em;
     width: 500px;
-    margin: 50px auto;
-    border-radius: 5px;
-    box-shadow: 0 1.5em 3em #b9b6da;
-
 }
 
 #placement{
@@ -43,7 +43,7 @@ select{
     padding: 0.45rem 0.9rem;
     letter-spacing: 0.5px;
     cursor: pointer;
-    background-color: #5f51f9;
+    background-color: rgb(23, 24, 52);
     border: none;
     color: #FFFFFF;
 }
@@ -73,9 +73,9 @@ select::-ms-expand{
 }
 
 .box button:disabled{
-    background-color: #f94646;
+    background-color: rgb(23, 24, 52);
     color: #FFFFFF;
-    border: 2px solid #d41010;
+    border: 2px solid rgb(23, 24, 52);
 }
 
 .box button{
@@ -87,7 +87,7 @@ select::-ms-expand{
 .box a{
     margin-top: 10px;
     text-decoration: none;
-    background-color: #14a403;
+    background-color: #0e8501;
     color: #FFFFFF;
     border: 2px solid #9c95ea;
     text-align: center;
@@ -98,6 +98,7 @@ select::-ms-expand{
     border-radius: 5px;
 }
 
-footer{
-    margin-top: 30em;
+.footer-text{
+    margin-top: 180px;
+    color: #fff;
 }
