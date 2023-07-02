@@ -1,19 +1,19 @@
-const container = document.querySelector(".container");
-const userInput = document.getElementById(".placement");
+const container = document.querySelector(".container-box");
+const userInput = document.getElementById("placement");
 const submitBtn = document.getElementById("download-btn");
 const sizeOptions = document.querySelector(".size");
 const BGColor = document.getElementById("color1");
-const FGColor = documnet.getElementById("color2");
+const FGColor = document.getElementById("color2");
 
 
 let QR_Code;
-let sizechoice = 100;
+let sizeChoice = 100;
 let BGColorChoice = "#0000000";
-let FGColorChoice = "FFFFFF";
+let FGColorChoice = "#FFFFFF";
 
 
 sizeOptions.addEventListener("change", () => {
-    sizechoice = sizeOptions.value;
+    sizeChoice = sizeOptions.value;
 });
 
 BGColor.addEventListener("input", () => {
@@ -21,10 +21,8 @@ BGColor.addEventListener("input", () => {
 });
 
 FGColor.addEventListener("input", () => {
-    FGColorChoice = BGColor.value;
+    FGColorChoice = FGColor.value;
 });
-
-
 
 
 userInput.addEventListener("input", () => {
@@ -37,6 +35,7 @@ userInput.addEventListener("input", () => {
     }
 });
 
+
 const inputFormatter = (value) => {
     value = value.replace(/[^a-z0-9A-Z]+/g, "");
     return value;
@@ -48,12 +47,12 @@ const generateQRCode = async() => {
 
     QR_Code = await new QR_Code(container,{
         text: userInput.value,
-        width: sizechoice,
+        width: sizeChoice,
         colorDark: FGColorChoice,
         colorLight: BGColorChoice
     });
 
-    const src = contianer.firstChild.toDataURL("imag/png");
+    const src = container.firstChild.toDataURL("imag/pmg");
     downloadBtn.href = src;
 
     let userValue = userInput.value;
@@ -69,7 +68,7 @@ const generateQRCode = async() => {
 
 window.onload = () => {
     container.innerHTML = "";
-    sizeOptions.value = sizechoice;
+    sizeOptions.value = sizeChoice;
     userInput.value = ""
     BGColor.value = BGColorChoice;
     FGColor.value = FGColorChoice;

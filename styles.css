@@ -15,11 +15,8 @@ body{
 .wrapper{
     background-color: #FFFFFF;
     padding: 2em;
-    position: absolute;
     width: 500px;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+    margin: 50px auto;
     border-radius: 5px;
     box-shadow: 0 1.5em 3em #b9b6da;
 
@@ -46,7 +43,7 @@ select{
     padding: 0.45rem 0.9rem;
     letter-spacing: 0.5px;
     cursor: pointer;
-    background-color: #b9b6da;
+    background-color: #5f51f9;
     border: none;
     color: #FFFFFF;
 }
@@ -76,27 +73,31 @@ select::-ms-expand{
 }
 
 .box button:disabled{
-    background-color: #b9b6da;
+    background-color: #f94646;
     color: #FFFFFF;
-    border: 2px solid #9c95ea;
+    border: 2px solid #d41010;
 }
 
 .box button{
-    background-color: #b9b6da;
+    background-color: #f94646;
     color: #FFFFFF;
-    border: 2px solid #9c95ea;
+    border: 2px solid #d41010;
 }
 
 .box a{
     margin-top: 10px;
     text-decoration: none;
-    background-color: #b9b6da;
+    background-color: #14a403;
     color: #FFFFFF;
     border: 2px solid #9c95ea;
     text-align: center;
 }
 
-.container{
+.container-box{
     margin-top: 15px;
     border-radius: 5px;
+}
+
+footer{
+    margin-top: 30em;
 }
